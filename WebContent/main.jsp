@@ -7,10 +7,13 @@
 <meta name="viewport" content="width= device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/custom.css">
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
 <title>불면증은 냅두면 불어요</title>
 </head>
 <body>
-  			<nav class="navbar navbar-default">
+<nav class="navbar navbar-default">
   				<div class="navbar-header">
    				<button type="button" class="navbar-toggle collapsed"
     				data-topple="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -49,35 +52,35 @@
    			</li>   		
    			</ul>
    			</div>
- </nav>
- <div class ="card bg-light mt-3">
- 	<div class="card-header bg-light">
- 	 <div class ="row">
- 		 <div class ="col-8 text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;불면증이란?<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;불면증은 전체 인구의 <span style ="color: red; ">30% 정도가</span> 경험하는<br>  </div>
- 	</div>
- 	</div>
- </div>
- <div class="card-body">
- 	<h5 class="card-title">
- &nbsp;매우 흔한 질환이며 3개월 이상 증상이 만성적으로 지속되고 이로 인해 낮 동안 <br><br>
- &nbsp;피로감, 집중력장애, 감정적인 변화 등 활동에 지장을 경험하는 경우는 전 인구 <span style ="color: red; "> 10%</span> 정도입니다.<br><br>
-	 <a class="insomnia" href="https://www.sleepmed.or.kr/content/info/insomnia.html">&nbsp;자세히 알아보기</a><br>
- 	</h5>
- 	</div>
- <div class ="card bg-light mt-3">
- 	<div class="card-header bg-light">
- 		<div class="row">
- 		 <div class ="col-8 text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;자세한 내용<br><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;우리는 일시적인 스트테스나 기분의 변화로 인해 잠이 오지 않는 일을 경험하지만,<br><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;불면증상이 반복되면 주의를 기울여 증상이 악회되지 않도록 해야 합니다.<br><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;보통 이러한 불면증상을 일주일에 3차례 이상 경험하거나 <br><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;불면으로 이핸 낮 동안의 생활에 방해가 심해진다면,<br><br> 
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;가까운 병원이나 의원에 내원하여 본인의 증상을 이야기 하길 바랍니다.<br><br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;우측 상단의 자가진단를 click하셔서 진단해 보세요<br><br></div>
-	</div>   
+</nav>
+ 
+<div class="main">
+	<div class="main-explain">
+		<div class="main-explain-text">
+			<ul>
+				<li><h4>불면증이란?</h4></li>
+				<li>
+					<p>불면증은 전체 인구의 <span style ="color: red; ">30% 정도가</span> 경험하는 매우 흔한 질환이며 3개월 이상 증상이 만성적으로 지속되고 이로 인해 낮 동안 피로감, 집중력장애, 감정적인 변화 등 활동에 지장을 경험하는 경우는 전 인구 <span style ="color: red; "> 10%</span> 정도입니다.</p>
+				</li>
+				<li><a class="insomnia" href="https://www.sleepmed.or.kr/content/info/insomnia.html">자세히 알아보기</a></li>
+			</ul>
+		</div>
 	</div>
+	<div class="main-explain">
+		<div class="main-explain-text">
+			<ul>
+				<li style="margin-bottom: 5px;"><h4>자세한 내용</h4></li>
+				<li>
+					<p>우리는 일시적인 스트테스나 기분의 변화로 인해 잠이 오지 않는 일을 경험하지만, 불면증상이 반복되면 주의를 기울여 증상이 악회되지 않도록 해야 합니다.</p>
+					<p>불면증상이 반복되면 주의를 기울여 증상이 악회되지 않도록 해야 합니다.</p>
+					<p>보통 이러한 불면증상을 일주일에 3차례 이상 경험하거나 불면으로 이핸 낮 동안의 생활에 방해가 심해진다면, 가까운 병원이나 의원에 내원하여 본인의 증상을 이야기 하길 바랍니다.</p>
+					<p>좌측 상단의 자가진단를 click하셔서 진단해 보세요</p>
+				</li>
+			</ul>
+		</div>
 	</div>
+</div>	
+	
  	<footer class="navbar navbar-default" style="margin-top : 10px">
                         <h5>여기에 상담 등록하시면 연락 드립니다.</h5>
                         <section class="contanter">

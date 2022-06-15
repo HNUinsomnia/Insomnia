@@ -1,0 +1,56 @@
+.main {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main ul{
+  padding: 0;
+  list-style: none;
+}
+
+.main .main-explain {
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  display: flex;
+  overflow: auto;
+  border: 5px solid #855600;
+  background-color: bisque;
+  height: auto;
+  min-width: 80vw;
+  z-index: 500;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main .main-explain .main-explain-text {
+  align-items: center;
+  font-family: 'SCDream5';
+}
+
+.main .main-explain2 {
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  display: flex;
+  overflow: auto;
+  border: 5px solid #855600;
+  background-color: bisque;
+  height: auto;
+  min-width: 80vw;
+  z-index: 500;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main .main-explain2 .main-explain-text2 {
+  align-items: center;
+  font-family: 'SCDream5';
+}
