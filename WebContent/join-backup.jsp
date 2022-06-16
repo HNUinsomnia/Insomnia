@@ -51,47 +51,21 @@
    			</ul>
    			</div>
  </nav>
- 
- <script type="text/javascript">
-	function checkLogin() {
-		var form = document.loginForm;
-		if (form.userID.value == "") {
-			alert("아이디를 입력해주세요.");
-			form.userID.focus();
-			return false;
-		} 
-		else if (form.userPassword.value == "") {
-			alert("비밀번호를 입력해주세요.");
-			form.userPassword.focus();
-			return false;
-		}
-		else if (form.userEmail.value == "") {
-			alert("이메일을 입력해주세요.");
-			form.userEmail.focus();
-			return false;
-		}
-
-		form.submit();
-	}
- </script>
- 
    <section class="container mt-3" style="max-width: 560px;">
-    <form name="loginForm" method="post" action="./joinAction.jsp">
+    <form method="post" action="./joinAction.jsp">
      <h3 style="text-align: center;">회원가입 화면</h3>
-     <div title="4~20자 이내로 작성해주세요" class="form-group">
+     <div class="form-group">
       <input type="text" class="form-control" placeholder="아이디" name="userID" maxlength="20">
       </div>
-      <div title="4~20자 이내로 작성해주세요/숫자,영어,특수문자로만 구성해주세요" class="form-group">
+      <div class="form-group">
       <input type="password" class="form-control" placeholder="비밀번호" name="userPassword" maxlength="20">
       </div>
       	<div class="form-group">
       <input type="text" class="form-control" placeholder="이메일" name="userEmail" maxlength="20">
       </div>
-      <input type="submit" class="btn btn-primary form-control" value="회원가입" onclick="">
+      <input type="submit" class="btn btn-primary form-control" value="회원가입">
     </form>
   </section>
-  
-  
   <footer class="navbar navbar-default" style="margin-top : 50px">
                         <h5>여기에 상담 등록하시면 연락 드립니다.</h5>
                         <section class="contanter">
