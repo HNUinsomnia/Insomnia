@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@	page import="java.io.PrintWriter" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,6 +12,30 @@
 
 <title>불면증은 냅두면 불어요</title>
 </head>
+<script type ="text/javascript">
+function checkLogin() {
+	var form = document.loginForm;
+	
+	for(i = 0; i < form.id.value.length; i++) {
+		var ch = form.id.value.charAt(i);
+		
+		if((ch < 'a' || ch > 'z') && (ch > 'A' || ch < 'Z') && (ch > '0' || ch < '9')) {
+			alert("아이디는 영문 소문자만 입력 가능합니다");
+			form.id.select();
+			return;
+		}
+				
+	}
+	
+	if (isNaN(form.passwd.value)) {
+		alert("비밀번호는 숫자만 입력 가능합니다!");
+		form.passwd.select();
+		return;
+	}
+	
+	form.submit();
+}
+</script>
 <body>
   <nav class="navbar navbar-default">
   				<div class="navbar-header">
@@ -57,15 +81,15 @@
   <div class="col-lg-4"></div>
   <div class="col-lg-4">
    <div class="jumbotron" style="padding-top: 50px;margin-top: 50px;">
-    <form method="post" action="loginAction.jsp">
+    <form name= "loginForm" method="post" action="loginAction.jsp">
      <h3 style="text-align: center;">로그인 화면</h3>
      <div class="form-group">
-      <input type="text" class="form-control" placeholder="아이디" name="userID" maxlength="20">
+      <input type="text" class="form-control" placeholder="아이디" name="id" maxlength="20">
       </div>
       <div class="form-group">
-      <input type="password" class="form-control" placeholder="비밀번호" name="userPassword" maxlength="20">
+      <input type="password" class="form-control" placeholder="비밀번호" name="passwd" maxlength="20">
       </div>
-      <input type="submit" class="btn btn-primary form-control" value="로그인">
+      <input type="submit" class="btn btn-primary form-control" value="로그인" onclick="checkLogin()">
     </form>
    </div>
   </div>
