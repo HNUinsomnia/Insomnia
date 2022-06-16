@@ -1,6 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    <%@ page import= "java.io.PrintWriter" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,10 +7,37 @@
 <meta name="viewport" content="width= device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/custom.css">
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
 <title>불면증은 냅두면 불어요</title>
 </head>
+<script type ="text/javascript">
+function checkLogin() {
+	var form = document.loginForm;
+	
+	for(i = 0; i < form.id.value.length; i++) {
+		var ch = form.id.value.charAt(i);
+		
+		if((ch < 'a' || ch > 'z') && (ch > 'A' || ch < 'Z') && (ch > '0' || ch < '9')) {
+			alert("아이디는 영문 소문자만 입력 가능합니다");
+			form.id.select();
+			return;
+		}
+				
+	}
+	
+	if (isNaN(form.passwd.value)) {
+		alert("비밀번호는 숫자만 입력 가능합니다!");
+		form.passwd.select();
+		return;
+	}
+	
+	form.submit();
+}
+</script>
 <body>
- 	<nav class="navbar navbar-default">
+  <nav class="navbar navbar-default">
   				<div class="navbar-header">
    				<button type="button" class="navbar-toggle collapsed"
     				data-topple="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -50,20 +76,26 @@
    			</li>   		
    			</ul>
    			</div>
- </nav>
-    <section class= "container mt-3" style="max-width: 560px;">
-    <form method="post" action="loginAction.jsp">
+</nav>
+ <div class="container">
+  <div class="col-lg-4"></div>
+  <div class="col-lg-4">
+   <div class="jumbotron" style="padding-top: 50px;margin-top: 50px;">
+    <form name= "loginForm" method="post" action="loginAction.jsp">
      <h3 style="text-align: center;">로그인 화면</h3>
      <div class="form-group">
-      <input type="text" class="form-control" placeholder="아이디" name="userID" maxlength="20">
+      <input type="text" class="form-control" placeholder="아이디" name="id" maxlength="20">
       </div>
       <div class="form-group">
-      <input type="password" class="form-control" placeholder="비밀번호" name="userPassword" maxlength="20">
+      <input type="password" class="form-control" placeholder="비밀번호" name="passwd" maxlength="20">
       </div>
-      <input type="submit" class="btn btn-primary form-control" value="로그인">
+      <input type="submit" class="btn btn-primary form-control" value="로그인" onclick="checkLogin()">
     </form>
-   </section>
-  <footer class="navbar navbar-default" style="margin-top : 50px">
+   </div>
+  </div>
+  <div class="col-lg-4"></div>
+ </div>
+  <footer class="navbar navbar-default" style="margin-top : 10px">
                         <h5>여기에 상담 등록하시면 연락 드립니다.</h5>
                         <section class="contanter">
  	<select name= "lectureDivide" class="form-control mx-1 mt 2">
